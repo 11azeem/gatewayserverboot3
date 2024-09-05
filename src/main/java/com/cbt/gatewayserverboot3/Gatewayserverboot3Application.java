@@ -7,9 +7,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class Gatewayserverboot3Application {
+public class Gatewayserverboot3Application
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         SpringApplication.run(Gatewayserverboot3Application.class, args);
     }
