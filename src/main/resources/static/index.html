@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suite Spott Gateway</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+        .content-api-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-right: 10px;
+            flex: 0 0 auto;
+            width: calc(25% - 10px);
+            box-sizing: border-box;
+        }
+        .content-api-card:last-child {
+            margin-right: 0;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #5c0f71;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #5c0f71;
+            margin-top: 0;
+            font-size: 1em;
+        }
+        .button {
+            display: inline-block;
+            background-color: #5c0f71;
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 0.9em;
+        }
+        .button:hover {
+            background-color: #7c1e91;
+        }
+        @media (max-width: 768px) {
+            .content-container {
+                flex-wrap: wrap;
+            }
+            .content-api-card {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="logo-container">
+        <img src="Logo.png" alt="Suite Spott Logo" class="logo">
+    </div>
+
+    <div class="welcome-card">
+        <h1>Welcome to Suite Spott</h1>
+        <p>Suite Spott is your gateway to seamless microservices' integration. Explore our services and APIs to enhance
+            your application ecosystem.</p>
+    </div>
+
+    <div class="content-card">
+        <h2>Available Services</h2>
+        <p>Explore our range of microservices:</p>
+        <ul>
+            <li>Customer Service</li>
+            <li>Reservation Service</li>
+            <li>Payment Service</li>
+            <li>Notification Service</li>
+        </ul>
+    </div>
+
+    <div class="content-card">
+        <h2>Getting Started</h2>
+        <p>To begin using our services, follow these steps:</p>
+        <ol>
+            <li>Use Swagger to access Apis</li>
+            <li>Register customer for Suite Spott</li>
+            <li>Get Available Rooms</li>
+            <li>Book the desired room and make payment.</li>
+        </ol>
+    </div>
+
+    <div class="content-container">
+        <div class="content-api-card">
+            <h2>Customer Service API</h2>
+            <a href="http://localhost:8090/swagger-ui/index.html" target="_blank" class="button">Open Swagger UI</a>
+        </div>
+
+        <div class="content-api-card">
+            <h2>Reservation Service API</h2>
+            <a href="http://localhost:8091/swagger-ui/index.html" target="_blank" class="button">Open Swagger UI</a>
+        </div>
+
+        <div class="content-api-card">
+            <h2>Payment Service API</h2>
+            <a href="http://localhost:8092/swagger-ui/index.html" target="_blank" class="button">Open Swagger UI</a>
+        </div>
+
+        <div class="content-api-card">
+            <h2>Hotel Management Service API</h2>
+            <a href="http://localhost:8093/swagger-ui/index.html" target="_blank" class="button">Open Swagger UI</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
